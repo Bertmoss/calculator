@@ -1,0 +1,108 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+#container {
+  margin: 100px auto 20px auto;
+  width: 400px;
+  background-color: #1d3557;
+  height: 535px;
+  padding: 1px;
+  border-radius: 15px;
+}
+#displayContainer {
+  width: 380px;
+  height: 100px;
+  background-color: #f1faee;
+  margin: 10px auto;
+  border: #1d3557 solid 1px;
+  border-radius: 15px;
+}
+button {
+  font-size: 20px;
+  border-radius: 15px;
+}
+#infoButton {
+  font-size: 14px;
+}
+#buttonContainer {
+  display: grid;
+  width: 380px;
+  height: 400px;
+  margin: 10px auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+}
+.operator,
+#equalSign {
+  background-color: #e63946;
+}
+.number {
+  background-color: #a8dadc;
+}
+#clear,
+#backspace,
+#positiveNegativeSign {
+  background-color: #457b9d;
+}
+#zero {
+  grid-column: span 2;
+}
+#display {
+  margin: 5%;
+  font-size: 45px;
+  overflow-wrap: break-word;
+  font-weight: bolder;
+  text-align: right;
+}
+#infoButton {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  border: #1d3557 solid 1px;
+  background-color: #fff999;
+  color: #1d3557;
+}
+.hidden {
+  visibility: hidden;
+}
+#notification {
+  margin: 10px auto;
+  width: 400px;
+  border: #1d3557 solid 5px;
+  background-color: #f1faee;
+  border-radius: 15px;
+  padding: 20px;
+}
+.buttonActive {
+  border: #1d3557 solid 5px;
+  color: #1d3557;
+  font-weight: bolder;
+}
+button {
+  transition: all 0.07s;
+  outline: none;
+  border: none;
+  color: #1d3557;
+}
+button:hover {
+  border: #1d3557 solid 5px;
+  color: #1d3557;
+  font-weight: bolder;
+}
+#infoButton:hover {
+  border: #1d3557 solid 2px;
+  font-weight: bold;
+}
+.moveDisplayNumUp {
+  margin: -5% 5% 5% 5% !important;
+}
+p {
+  margin: 0;
+}
